@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npm run htmllint && npm run stylelint",
+    "test": "npm run htmllint && npm run stylelint && npm run pa11y",
     "dev": "npx ws -d webbteknik",
     "pa11y": "node --no-warnings=ExperimentalWarning ./pa11y-all.mjs",
     "stylelint": "npx stylelint webbteknik/**/*.css",
