@@ -1,5 +1,4 @@
 {
-    "java.dependency.packagePresentation": "flat",
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
     "editor.wordWrapColumn": 120,
     "cSpell.language": "en,sv",
