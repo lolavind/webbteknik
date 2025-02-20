@@ -25,6 +25,7 @@
     "html-validate": "^9.3.0",
     "local-web-server": "^5.4.0",
     "pa11y": "^8.0.0",
-    "stylelint": "^16.14.1"
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0"
   }
 }
