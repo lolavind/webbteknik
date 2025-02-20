@@ -31,3 +31,8 @@ This project is using [Pa11y](https://pa11y.org/) to tests for accessability iss
 ## Running all Tests
 
 To run all tests in the project, run `npm run test` in a terminal window.
+
+## VSCode Support
+
+For your convenience, there is a VSCode extension suggestion that will install editor support for stylelint and
+html-validator.
