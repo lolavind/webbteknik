@@ -1,0 +1,319 @@
+* {
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	font-family: 'JetBrains Mono';
+}
+
+/*Text*/
+h1 {
+	font-family: 'Inknut Antiqua';
+	font-size: 70px;
+}
+
+h2 {
+	font-size: 20px;
+	text-align: center;
+	font-weight: normal;
+}
+p {
+	font-size: 20px;
+	text-align: center;
+}
+
+header {
+	width: 100vw;
+	justify-content: space-between;
+}
+
+a {
+	padding-right: 2vw;
+	padding-left: 2vw;
+}
+
+
+*:focus {
+    outline: 2px solid black; /* Markerar elementet tydligt */
+}
+
+/*Media queries*/
+@media (max-width: 700px){
+	.meny{
+		display: none;
+
+	}
+
+	.ikon {
+        display: block; /* Visa ikonen */
+        text-align: center;
+        cursor: pointer; /* Gör den klickbar */
+    }
+}
+
+
+/*Positioner*/
+.logga{
+	
+	float: left;
+}
+
+.burger{
+	display: none;
+	float: right;
+	width: 5vw;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.meny{
+	float: right;
+	margin-top: 3vh;
+	text-decoration: none;
+}
+
+	.meny a {
+		color: black; /* Svart textfärg */
+		text-decoration: none; /* Tar bort understrykning */
+		padding-bottom: 2px; /* Lägger till lite mellanrum för linjen */
+		border-bottom: 2px solid transparent; /* Gör så att linjen inte syns från början */
+		transition: border-bottom 0.3s ease-in-out; /* Gör effekten mjuk */
+	}
+
+	.meny a:visited {
+		color: black; /* Behåller svart färg även efter besök */
+	}
+
+	.meny a:hover {
+		color: black; /* Svart även när musen hovrar */
+		text-decoration: solid;
+		border-bottom: 2px solid black; /* Visar en svart linje vid hover */
+
+	}
+
+	.meny a:active {
+		color: black; /* Svart när länken klickas */
+	}
+
+footer{
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20;
+}
+
+/*index.html*/
+.banner{
+	width: 100vw;
+	z-index: 0;
+}
+
+.banner-text{
+	width: 25vw;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+}
+
+.start_bilder{
+	margin: auto;
+	width: 65vw;
+}
+
+.meny_bild_div{
+	float: left;
+	position: relative;
+  	text-align: center;
+  	color: white;
+}
+
+.bord_bild_div{
+	float: right;
+	position: relative;
+  	text-align: center;
+  	color: white;
+}
+
+.centered{
+	position: absolute;
+	width: 100%;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	color: white;
+}
+
+	.centered a {
+		color: white; /* vit textfärg */
+		text-decoration: none; /* Tar bort understrykning */
+		padding-bottom: 2px; /* Lägger till lite mellanrum för linjen */
+		border-bottom: 2px solid transparent; /* Gör så att linjen inte syns från början */
+		transition: border-bottom 0.3s ease-in-out; /* Gör effekten mjuk */
+	}
+
+	.centered a:visited {
+		color: white; /* Behåller vit färg även efter besök */
+	}
+
+	.centered a:hover {
+		color: white; /* Vit även när musen hovrar */
+		text-decoration: solid;
+		border-bottom: 2px solid white; /* Visar en svart linje vid hover */
+
+	}
+
+	.centered a:active {
+		color: white; /* Vit när länken klickas */
+	}
+
+.karta{
+	width: 100vw;
+}
+
+/*Meny*/
+.meny_h1{
+	margin-left: 10vw;
+}
+
+.list_head{
+	font-weight: bold;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li{
+	
+	line-height: 1; /* Justera avståndet mellan raderna */
+	margin: 2px 0; /* Minskar avståndet mellan list-elementen */
+    padding: 5px 0; /* Minskar utrymmet inuti varje list-item */
+	text-align: center;
+}
+
+.se_mer{
+	cursor: pointer;
+	width: 10vw;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+
+/*Boka*/
+.boknings_text{
+	display: flex;
+	justify-content: left;
+	align-content: left;
+	text-align: left;
+}
+
+.boknings_text p {
+	margin-left: 10vw;
+	text-align: left;
+	margin-bottom: 5vw;
+}
+
+.boka-bord {
+	margin-left: 10vw;
+}
+
+.form{
+	margin-left: 10vw;
+	/* gap: 10%; */
+	margin-bottom: 1vw;
+}
+
+/* .form-container {
+	display: flex;
+	gap: 15px; /
+  } */
+
+input {
+	margin-right: 5vw; 
+	margin-bottom: 4vw;
+}
+
+label{
+	margin-bottom: 4vw;
+}
+
+.boka_bord_bakgrund{
+	
+	background-image: url(public/bakgrund_boka.png);
+	background-size: cover;
+}
+
+/* .submit{
+	column-fill: white;
+	flood-color: white;
+	
+} */
+
+/*Om oss*/
+.om_oss{
+	margin-left: 10vw;
+}
+
+/* .rad_1_om{
+	margin: auto;
+	width: 80vw;
+}
+
+.rad_1_text{
+	float: left;
+	position: relative;
+  	text-align: center;
+}
+
+.rad_1_video{
+	float: right;
+	position: relative;
+  	text-align: center;
+} */
+
+
+.rad_1_om {
+    display: flex;  /* Aktiverar flexbox */
+    justify-content: space-between; /* Sprider ut elementen jämnt */
+    align-items: center; /* Centrerar dem vertikalt */
+    width: 80vw;
+    margin: auto;
+}
+
+.rad_1_text, .rad_1_video {
+    flex: 1; /* Gör att båda tar upp lika mycket utrymme */
+    text-align: center;
+}
+
+.rad_2_om {
+    display: flex;  /* Aktiverar flexbox */
+    justify-content: space-between; /* Sprider ut elementen jämnt */
+    align-items: center; /* Centrerar dem vertikalt */
+    width: 80vw;
+    margin: auto;
+}
+
+.rad_2_bild, .rad_2_text {
+    flex: 1; /* Gör att båda tar upp lika mycket utrymme */
+    text-align: center;
+}
+
+/*Öppettider*/
+
+.oppettider{
+	margin-left: 10vw;
+}
+
+.table{
+	margin-left: 10vw;
+	font-size: 20px;
+	padding-bottom: 5vw;
+}
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<HTML lang="sv">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Eurasias webbsida">
+		<meta name="keywords" content="start, meny, beställ, boka">
+		<meta name="author" content="Lovisa Landberg">
+		<!--Inställningar för hur sidan ser ut för olika enheter:-->
+		<meta name="viewport" content="width=devise-width,initial-scale=1.0">
+	</head>
+	<!--påtvingad radmatning(blanksteg??):-->
+	<br>
+	<!--lägga in en bild:-->
+	<img src="bilden.png" alt="vad jag vill att bilden ska beskrivas som" height="42" width="42">
+	<!--en länk(absolut) till en extern sida:-->
+	<a href="https://en.länk.se">Detta visas på sidan</a>
+
+	<!--table:-->
+	<table>
+		<tr>
+			<th>Header1</th>
+			<th>Header2</th>
+		</tr>
+		<tr>
+			<td>Cell1.1</td>
+			<td>Cell1.2</td>
+		</tr>
+		<tr>
+			<td>Cell2.1</td>
+			<td>Cell2.2</td>
+		</tr>
+	</table>
+	<!--Listor:-->
+		<!--Oordnad lista(utan siffror eller punkter framför):-->
+		<ul>
+			<li>objekt</li>
+			<li>objekt</li>
+		</ul>
+		<!--ordrad lista(1,2,3...):-->
+		<ol>
+			<li>objekt</li>
+			<li>objekt</li>
+		</ol>
+		<!--defined list(bestämma själv):-->
+		<dl>
+			<dt>istället för "1"</dt>
+			<dd>objekt inom "dt"</dd>
+			<dd>objekt inom "dt"</dd>
+			<dt>instället för "2"</dt>
+			<dd>objekt inom "dt</dd>
+		</dl>
+	
+	<!--Semantiska html element(tagar som berättar nånting):-->
+		<article></article>
+		<aside></aside>
+		<details></details>
+		<!--Sidfot och sidhuvud:-->
+		<footer></footer>
+		<header></header>
+		<!--Meny:-->
+		<nav></nav>
+		<section></section>
+		<summary></summary>
+		<time datetime=""></time>
+
+	<!--Exempel på användning av semantiska html element:-->
+	<body>
+		<header>
+			<h1>Sidans huvudrubrik</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">Menyval 1</a></li>
+				<!--Denna är förmodligen fel:-->
+				<li><a href=“#”</a>Menyval 1</li>
+
+				<li><a href="#">Menyval 2</a></li>
+			</ul>
+		</nav>
+		<section>
+			En utpekad del på sidan
+		</section>
+		<article>
+			<h2>Underrubrik</h2>
+			<p>Brödertext yay!</p>
+		</article>
+		<article>
+			<h2>Underrubrik igen :D</h2>
+			<p>Brödertext yay!</p>
+		</article>
+		<aside>
+			Bra för reklam osv
+		</aside>
+		<footer>
+			lite info längst ner på websidan
+		</footer>
+	</body>
+	
+</HTML>
