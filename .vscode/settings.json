@@ -14,5 +14,10 @@
     "files.autoGuessEncoding": false,
     "css.validate": false,
     "less.validate": false,
-    "scss.validate": false
+    "scss.validate": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.stylelint": "explicit"
+    },
+    "css.format.enable": true,
+    "html.format.enable": true
 }
