@@ -12,4 +12,7 @@
     "xml.format.maxLineWidth": 120,
     "files.insertFinalNewline": true,
     "files.autoGuessEncoding": false,
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false
 }
