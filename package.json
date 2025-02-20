@@ -1,0 +1,29 @@
+{
+  "name": "webbteknik",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run htmllint && npm run stylelint",
+    "dev": "npx ws -d webbteknik",
+    "pa11y": "npx pa11y http://localhost:8000/",
+    "stylelint": "npx stylelint webbteknik/**/*.css",
+    "htmllint": "npx html-validate webbteknik/**/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lolavind/webbteknik.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lolavind/webbteknik/issues"
+  },
+  "homepage": "https://github.com/lolavind/webbteknik#readme",
+  "description": "",
+  "devDependencies": {
+    "html-validate": "^9.3.0",
+    "local-web-server": "^5.4.0",
+    "pa11y": "^8.0.0",
+    "stylelint": "^16.14.1"
+  }
+}
