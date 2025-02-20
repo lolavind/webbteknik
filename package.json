@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run htmllint && npm run stylelint",
     "dev": "npx ws -d webbteknik",
-    "pa11y": "npx pa11y http://localhost:8000/",
+    "pa11y": "node --no-warnings=ExperimentalWarning ./pa11y-all.mjs",
     "stylelint": "npx stylelint webbteknik/**/*.css",
     "htmllint": "npx html-validate webbteknik/**/*.html"
   },
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/lolavind/webbteknik#readme",
   "description": "",
   "devDependencies": {
+    "@types/pa11y": "^5.3.7",
     "html-validate": "^9.3.0",
     "local-web-server": "^5.4.0",
     "pa11y": "^8.0.0",
