@@ -6,7 +6,7 @@ import { glob } from 'node:fs/promises';
 var errors = 0;
 async function runPa11y(file) {
   try {
-    const results = await pa11y(file);
+    const results = await pa11y(file, {runners: ["axe"]});
     errors += results.issues.length;
     const text = await reporter.results(results);
     console.log(text);
