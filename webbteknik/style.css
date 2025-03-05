@@ -42,21 +42,6 @@ a {
     outline: 2px solid black; /* Markerar elementet tydligt */
 }
 
-/*Media queries*/
-@media (max-width: 700px){
-	.meny{
-		display: none;
-
-	}
-
-	.ikon {
-        display: block; /* Visa ikonen */
-        text-align: center;
-        cursor: pointer; /* Gör den klickbar */
-    }
-}
-
-
 /*Positioner*/
 .logga{
 	
@@ -69,6 +54,19 @@ a {
 	width: 5vw;
 	margin-top: auto;
 	margin-bottom: auto;
+}
+
+/*Media queries*/
+@media (max-width : 700px){
+	.meny{
+		display: none;
+	}
+
+	.burger{
+		display: block;
+		text-align: center;
+		cursor: pointer;
+	}
 }
 
 .meny{
