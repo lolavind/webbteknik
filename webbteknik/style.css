@@ -210,6 +210,12 @@ ul li{
 		text-align: center;
 		margin-left: 0;
 	}
+	.se_mer{
+		break-inside: avoid;
+	}
+	.pdf{
+		display: none;
+	}
 }
 
 
