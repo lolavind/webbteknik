@@ -40,8 +40,7 @@ a {
 
 
 *:focus {
-	outline: 2px solid black;
-	/* Markerar elementet tydligt */
+	outline: 2px solid black; /* Markerar elementet tydligt */
 }
 
 /*Positioner för gemensamma element*/
@@ -78,31 +77,24 @@ a {
 
 .meny a {
 	color: black;
-	text-decoration: none;
-	/* Tar bort understrykning */
+	text-decoration: none; /* Tar bort understrykning */
 	padding-bottom: 2px;
-	border-bottom: 2px solid transparent;
-	/* Gör så att linjen inte syns från början */
-	transition: border-bottom 0.3s ease-in-out;
-	/* Gör effekten mjuk */
+	border-bottom: 2px solid transparent; /* Gör så att linjen inte syns från början */
+	transition: border-bottom 0.3s ease-in-out; /* Gör effekten mjuk */
 }
 
 .meny a:visited {
 	color: black;
-	/* Behåller svart färg även efter besök */
 }
 
 .meny a:hover {
 	color: black;
-	/* Svart även när musen hovrar */
 	text-decoration: solid;
-	border-bottom: 2px solid black;
-	/* Visar en svart linje vid hover */
+	border-bottom: 2px solid black; /* Visar en svart linje vid hover */
 }
 
 .meny a:active {
-	color: black;
-	/* Svart när länken klickas */
+	color: black; /* Svart när länken klickas */
 }
 
 footer {
@@ -156,30 +148,23 @@ footer {
 .centered a {
 	color: white;
 	text-decoration: none;
-	padding-bottom: 2px;
-	/* Lägger till lite mellanrum*/
-	border-bottom: 2px solid transparent;
-	/* Gör så att linjen inte syns från början */
-	transition: border-bottom 0.3s ease-in-out;
-	/* Gör effekten mjuk */
+	padding-bottom: 2px; /* Lägger till lite mellanrum*/
+	border-bottom: 2px solid transparent; /* Gör så att linjen inte syns från början */
+	transition: border-bottom 0.3s ease-in-out; /* Gör effekten mjuk */
 }
 
 .centered a:visited {
 	color: white;
-	/* Behåller vit färg även efter besök */
 }
 
 .centered a:hover {
 	color: white;
-	/* Vit även när musen hovrar */
 	text-decoration: solid;
-	border-bottom: 2px solid white;
-	/* Visar en vit linje vid hover */
+	border-bottom: 2px solid white; /* Visar en vit linje vid hover */
 }
 
 .centered a:active {
 	color: white;
-	/* Vit när länken klickas */
 }
 
 .karta {
@@ -201,12 +186,9 @@ ul {
 }
 
 ul li {
-	line-height: 1;
-	/* Justera avståndet mellan raderna */
-	margin: 2px 0;
-	/* Minskar avståndet mellan list-elementen */
-	padding: 5px 0;
-	/* Minskar utrymmet inuti varje list-item */
+	line-height: 1; /* Justera avståndet mellan raderna */
+	margin: 2px 0; /* Minskar avståndet mellan list-elementen */
+	padding: 5px 0; /* Minskar utrymmet inuti varje list-item */
 	text-align: center;
 }
 
@@ -281,8 +263,7 @@ label {
 
 .rad_1_om {
 	display: flex;
-	justify-content: space-between;
-	/* Sprider ut elementen jämnt */
+	justify-content: space-between; /* Sprider ut elementen jämnt */
 	align-items: center;
 	width: 80vw;
 	margin: auto;
@@ -290,15 +271,13 @@ label {
 
 .rad_1_text,
 .rad_1_video {
-	flex: 1;
-	/* Gör att båda tar upp lika mycket utrymme */
+	flex: 1; /* Gör att båda tar upp lika mycket utrymme */
 	text-align: center;
 }
 
 .rad_2_om {
 	display: flex;
-	justify-content: space-between;
-	/* Sprider ut elementen jämnt */
+	justify-content: space-between; /* Sprider ut elementen jämnt */
 	align-items: center;
 	width: 80vw;
 	margin: auto;
@@ -306,8 +285,7 @@ label {
 
 .rad_2_bild,
 .rad_2_text {
-	flex: 1;
-	/* Gör att båda tar upp lika mycket utrymme */
+	flex: 1; /* Gör att båda tar upp lika mycket utrymme */
 	text-align: center;
 }
 
